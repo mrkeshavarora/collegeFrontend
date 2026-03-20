@@ -1,0 +1,82 @@
+.course-card {
+    max-width: 350px;
+    min-width: 300px;
+    /* border: 2px solid  black; */
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid white; */
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.05),
+        0 10px 20px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.course-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.course-card-experience-container {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.course-card-experience {
+    /* font-size: 0.9rem; */
+    align-items: center;
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+    /* color: #0278ff; */
+}
+
+.course-card-button {
+    background-color: #155DFC;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.course-card-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-icon {
+    font-size: 1rem;
+    color: #155DFC;
+    /* background-color: red; */
+}
+
+.course-card-fee-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    color: #155DFC;
+}
+
+.course-card-description {
+    font-size: 0.9rem;
+    color: #555;
+}

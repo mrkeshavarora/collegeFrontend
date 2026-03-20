@@ -1,0 +1,119 @@
+/* .notice-card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    height: 200px;
+    gap: 20px;
+    border: 5px solid #e0f0f0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.05);
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -15px rgba(28, 57, 142, 0.1);
+    border-color: #1C398E33;
+}
+
+.notice-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #1C398E08;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.4s ease;
+}
+
+.notice-card:hover .notice-icon-wrapper {
+    background: #1C398E;
+}
+
+.notice-icon {
+    font-size: 24px;
+    color: #1C398E;
+    transition: all 0.4s ease;
+}
+
+.notice-card:hover .notice-icon {
+    color: white;
+}
+
+.notice-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notice-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.notice-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+}
+
+.notice-tag {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background: #ef444410;
+    color: #ef4444;
+    padding: 2px 8px;
+    border-radius: 100px;
+}
+
+.notice-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.4;
+}
+
+.notice-excerpt {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.notice-footer {
+    margin-top: 8px;
+}
+
+.read-more {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1C398E;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@media (max-width: 640px) {
+    .notice-card {
+        padding: 20px;
+        gap: 16px;
+    }
+    .notice-icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+    .notice-title {
+        font-size: 16px;
+    }
+} */

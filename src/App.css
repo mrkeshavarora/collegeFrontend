@@ -1,0 +1,15 @@
+* {
+  /* margin: ; */
+  /* padding: ; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hove:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  /* transform: translateY(-5px); */
+}
+
+.hove div img:hover {
+  transform: scale(1.1);
+  /* transform: translateY(-5px); */
+}
