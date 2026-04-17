@@ -1,0 +1,241 @@
+.hero-page {
+    overflow-x: hidden;
+}
+
+section {
+    padding-block: 5rem;
+}
+
+/* Custom Gradients */
+:root {
+    --primary-blue: #1C398E;
+    --accent-blue: #50A2FF;
+    --dark-blue: #0A194E;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.hero-page .hero {
+    min-height: 90vh;
+    background: linear-gradient(135deg, rgba(10, 25, 78, 0.9) 0%, rgba(28, 57, 142, 0.7) 100%),
+        url(https://www.davcollegeasr.org/images/clg_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 2rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.hero-text-box {
+    max-width: 800px;
+    backdrop-filter: blur(8px);
+    background: linear-gradient(110deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+    padding: 3rem;
+    border-radius: 2rem;
+    border: 1px solid var(--glass-border);
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.hero-span {
+    background: linear-gradient(90deg, #50A2FF, #A5C9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Stats Section */
+.home-stats {
+    /* background: white; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 20;
+    margin-top: -1rem !important;
+    padding-block: 0;
+}
+
+.stats-cont-box {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats-cont-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(28, 57, 142, 0.1);
+    border-color: var(--accent-blue);
+}
+
+.stats-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    background: #f0f4ff;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stats-cont-box:hover .stats-icon {
+    background: var(--primary-blue);
+    color: white;
+    transform: scale(1.1);
+}
+
+.stats-cont-box h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.stats-cont-box p {
+    color: #64748b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Featured Course Header */
+.home-featured-course-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.home-featured-course-header h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.home-featured-course-header p {
+    color: #64748b;
+    font-size: 1.1rem;
+}
+
+.home-featured-course-cards {
+    /* display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem; */
+}
+
+/* Notice Section */
+.home-events-notices {
+    background: #f8fafc;
+}
+
+.home-notice-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-inline: 1rem;
+}
+
+.home-notice-head-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+    font-weight: 800;
+}
+
+.home-notice-head-left svg {
+    color: var(--primary-blue);
+    font-size: 2rem;
+}
+
+.home-notice-head-right a {
+    color: var(--primary-blue);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    background: #eff6ff;
+    transition: all 0.3s ease;
+}
+
+.home-notice-head-right a:hover {
+    background: var(--primary-blue);
+    color: white;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding-block: 3rem;
+    }
+
+    .hero-text-box {
+        padding: 2rem;
+    }
+
+    .home-stats {
+        margin-top: -3rem !important;
+        padding-inline: 1rem;
+    }
+
+    .stats-cont-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .home-featured-course-header h2 {
+        font-size: 2rem;
+    }
+}
