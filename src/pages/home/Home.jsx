@@ -86,7 +86,7 @@ const Home = () => {
           <h2>Featured Courses</h2>
           <p>Explore our flagship programs designed by industry experts to launch your career in top-tier organizations.</p>
         </div>
-        <div className="home-featured-course-cards">
+        <div className="home-featured-course-cards flex flex-wrap justify-center gap-10">
           {loading ? (
             [1, 2, 3].map(i => <div key={i} className="h-64 bg-gray-100 rounded-3xl animate-pulse"></div>)
           ) : (
